@@ -62,7 +62,7 @@
     "vscode:prepublish": "nr build",
     "release": "bumpp",
     "ext:package": "vsce package --no-dependencies",
-    "ext:publish": "vsxpub --no-dependencies"
+    "ext:publish": "vsce publish --no-dependencies"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.2.1",
