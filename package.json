@@ -7,13 +7,13 @@
   "description": "为 index.* 文件添加可自定义的徽章标记，快速识别项目入口文件",
   "author": "Cerrda <cerrda728@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/index-last#readme",
+  "homepage": "https://github.com/Cerrda/index-badge#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/index-last"
+    "url": "https://github.com/Cerrda/index-badge"
   },
   "bugs": {
-    "url": "https://github.com/antfu/index-last/issues"
+    "url": "https://github.com/Cerrda/index-badge/issues"
   },
   "categories": [
     "Other",
