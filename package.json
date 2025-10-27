@@ -1,0 +1,86 @@
+{
+  "publisher": "cerrda",
+  "name": "index-badge",
+  "displayName": "Index Badge",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.4.1",
+  "description": "为 index.* 文件添加可自定义的徽章标记，快速识别项目入口文件",
+  "author": "Cerrda <cerrda728@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/antfu/index-last#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antfu/index-last"
+  },
+  "bugs": {
+    "url": "https://github.com/antfu/index-last/issues"
+  },
+  "categories": [
+    "Other",
+    "Formatters"
+  ],
+  "main": "./dist/index.js",
+  "icon": "res/icon.png",
+  "files": [
+    "LICENSE.md",
+    "dist/*",
+    "res/*"
+  ],
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "type": "object",
+      "title": "Index Badge",
+      "properties": {
+        "indexBadge.badge": {
+          "type": "string",
+          "default": "🌟",
+          "description": "自定义 index.* 文件的徽章图标"
+        },
+        "indexBadge.tooltip": {
+          "type": "string",
+          "default": "index file",
+          "description": "鼠标悬停时显示的提示文本"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsdown src/index.ts --external vscode",
+    "dev": "nr build --watch --sourcemap",
+    "prepare": "nr update",
+    "update": "vscode-ext-gen --output src/generated/meta.ts",
+    "lint": "eslint .",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "vscode:prepublish": "nr build",
+    "release": "bumpp",
+    "ext:package": "vsce package --no-dependencies",
+    "ext:publish": "vsxpub --no-dependencies"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.2.1",
+    "@antfu/ni": "^23.3.1",
+    "@types/node": "^22.13.4",
+    "@types/vscode": "^1.97.0",
+    "@vscode/vsce": "^3.2.2",
+    "bumpp": "^10.0.3",
+    "eslint": "^9.20.1",
+    "ovsx": "^0.10.5",
+    "pnpm": "^10.4.1",
+    "reactive-vscode": "^0.2.10",
+    "taze": "^19.8.1",
+    "tsdown": "^0.9.6",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5",
+    "vscode-ext-gen": "^1.0.0",
+    "vsxpub": "^0.1.2"
+  }
+}

@@ -1,0 +1,54 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变背景 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    <!-- 星星渐变 -->
+    <linearGradient id="starGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 圆角背景圆 -->
+  <circle cx="64" cy="64" r="56" fill="url(#bgGradient)"/>
+  
+  <!-- 内层亮光 -->
+  <circle cx="64" cy="52" r="44" fill="white" opacity="0.15"/>
+  
+  <!-- Q弹的字母 i -->
+  <g transform="translate(64, 64)">
+    <!-- i 的点 - Q弹的圆形（变短） -->
+    <ellipse cx="0" cy="-26" rx="11" ry="9" fill="white" opacity="0.95">
+      <animate attributeName="ry" values="9;10;9" dur="1.5s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <!-- i 的竖 - 圆润的胶囊形状（变长） -->
+    <rect x="-10" y="-12" width="20" height="46" rx="10" ry="10" fill="white" opacity="0.95">
+      <animate attributeName="height" values="46;48;46" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- 阴影效果 -->
+    <ellipse cx="0" cy="36" rx="16" ry="4" fill="black" opacity="0.1"/>
+  </g>
+  
+  <!-- 可爱的星星 -->
+  <g transform="translate(84, 32)">
+    <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z" 
+          fill="url(#starGradient)"
+          style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2))"/>
+  </g>
+  
+  <!-- 装饰小点点 -->
+  <circle cx="36" cy="36" r="4" fill="#fbbf24" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="92" cy="92" r="3" fill="#fef3c7" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="28" cy="88" r="3.5" fill="#fbbf24" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
