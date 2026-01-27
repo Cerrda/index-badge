@@ -72,7 +72,3 @@ src/
 - **模块化项目**：清晰标识各模块的 index 文件
 - **大型项目**：在复杂目录结构中一眼找到入口
 - **团队协作**：统一的视觉标识，提升代码可读性
-
-## License
-
-[MIT](./LICENSE.md) License © 2025 [Anthony Fu](https://github.com/antfu)
