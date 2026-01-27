@@ -1,8 +1,5 @@
 # Index Badge
 
-<a href="https://marketplace.visualstudio.com/items?itemName=antfu.index-last" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/antfu.index-last.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
-<a href="https://kermanx.github.io/reactive-vscode/" target="__blank"><img src="https://img.shields.io/badge/made_with-reactive--vscode-%23007ACC?style=flat&labelColor=%23229863"  alt="Made with reactive-vscode" /></a>
-
 一个简洁优雅的 VSCode 扩展，为项目中的 `index.*` 入口文件添加可自定义的徽章标记，让文件浏览更加直观高效。
 
 ## 🌟 功能
