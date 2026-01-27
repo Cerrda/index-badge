@@ -18,8 +18,8 @@ importers:
         specifier: ^22.19.7
         version: 22.19.7
       '@types/vscode':
-        specifier: ^1.108.1
-        version: 1.108.1
+        specifier: ^1.97.0
+        version: 1.97.0
       '@vscode/vsce':
         specifier: ^3.7.1
         version: 3.7.1
@@ -37,7 +37,7 @@ importers:
         version: 10.28.2
       reactive-vscode:
         specifier: ^0.2.22
-        version: 0.2.22(@types/vscode@1.108.1)
+        version: 0.2.22(@types/vscode@1.97.0)
       taze:
         specifier: ^19.9.2
         version: 19.9.2
@@ -1201,8 +1201,8 @@ packages:
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
-  '@types/vscode@1.108.1':
-    resolution: {integrity: sha512-DerV0BbSzt87TbrqmZ7lRDIYaMiqvP8tmJTzW2p49ZBVtGUnGAu2RGQd1Wv4XMzEVUpaHbsemVM5nfuQJj7H6w==}
+  '@types/vscode@1.97.0':
+    resolution: {integrity: sha512-ueE73loeOTe7olaVyqP9mrRI54kVPJifUPjblZo9fYcv1CuVLPOEKEkqW0GkqPC454+nCEoigLWnC2Pp7prZ9w==}
 
   '@typescript-eslint/eslint-plugin@8.54.0':
     resolution: {integrity: sha512-hAAP5io/7csFStuOmR782YmTthKBJ9ND3WVL60hcOjvtGFb+HJxH4O5huAcmcZ9v9G8P+JETiZ/G1B8MALnWZQ==}
@@ -4660,7 +4660,7 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@types/vscode@1.108.1': {}
+  '@types/vscode@1.97.0': {}
 
   '@typescript-eslint/eslint-plugin@8.54.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
@@ -6907,10 +6907,10 @@ snapshots:
       strip-json-comments: 2.0.1
     optional: true
 
-  reactive-vscode@0.2.22(@types/vscode@1.108.1):
+  reactive-vscode@0.2.22(@types/vscode@1.97.0):
     dependencies:
       '@reactive-vscode/reactivity': 0.2.22
-      '@types/vscode': 1.108.1
+      '@types/vscode': 1.97.0
 
   read-pkg@9.0.1:
     dependencies:
